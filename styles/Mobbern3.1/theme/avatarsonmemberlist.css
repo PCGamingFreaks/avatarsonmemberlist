@@ -1,0 +1,41 @@
+/**
+ * 
+ * Avatars on Memberlist
+ * 
+ * @copyright (c) 2014 Wolfsblut ( www.pinkes-forum.de )
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ * @author Clemens Husung (Wolfsblvt)
+ */
+
+
+body.section-memberlist table td:first-child a {
+	display: block;
+	left: 40px;
+	line-height: 22px;
+	position: relative;
+}
+
+.member_avatar {
+	position: relative;
+	display: block;
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+
+.member_avatar img {
+	position: absolute;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: auto;
+}
+.member_avatar img:hover {
+	left: -40px;
+	top: -40px;
+	height:auto;
+	width:100px;
+	box-shadow: 0 0 20px #000;
+	z-index: 10;
+}
